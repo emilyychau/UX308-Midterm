@@ -2,20 +2,19 @@
 
 function gymDiscount (fCost, iFriends){
     let fTotal;
-    if (fCost <= 0) {
-        console.log("The starting gym membership must cost more than $0.00.");
+    if (iFriends === 0){
+        fTotal = fCost;
     }
-    if (iFriends === 1) {
-        fTotal = fCost * 0.95;
+    else if (iFriends === 1) {
+        fTotal = 0.95 * fCost;
     }
     else if (iFriends === 2) {
-        fTotal = fCost * 0.90;
+        fTotal = 0.90 * fCost;
     }
     else if (iFriends >= 3) {
-        fTotal = fCost * 0.85;
-        console.log("Your friends discount is capped at 15% for referrals to 3 or more friends.")
+        fTotal = 0.85 * fCost;
     }
-    return fTotal;
+return fTotal;
 
 }
 

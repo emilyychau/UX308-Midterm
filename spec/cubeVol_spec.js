@@ -21,5 +21,10 @@ describe("testing height2volume.js", function(){
         let volume = height2vol(height);
         expect(volume.toFixed(2)).toBe("0.00");
     });
+    it ("tests a negative height ", function(){
+        let height = -5;
+        let volume = height2vol(height);
+        expect(volume).toBe("The height of the cube cannot be negative");
+    });
 
 })

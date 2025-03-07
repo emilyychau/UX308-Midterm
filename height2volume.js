@@ -2,8 +2,7 @@
 
 function height2vol(height){
     if (height <= -1){
-        console.log
-
+        return "The height of the cube cannot be negative";
     }
     else {
         let volume = height ** 3;

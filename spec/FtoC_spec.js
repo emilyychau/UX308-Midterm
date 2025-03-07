@@ -11,9 +11,9 @@ describe("testing fahrenheit2celsius", function(){
         let celsius = fahrenheit2celsius(fahrenheit);
         expect(celsius.toFixed(2)).toBe("0.00");
     });
-    it("tests 71 Fº", function(){
-        let fahrenheit = 71;
+    it("tests 70 Fº", function(){
+        let fahrenheit = 70;
         let celsius = fahrenheit2celsius(fahrenheit);
-        expect(celsius.toFixed(2)).toBe("21.67");
+        expect(celsius.toFixed(2)).toBe("21.11");
     });
 })

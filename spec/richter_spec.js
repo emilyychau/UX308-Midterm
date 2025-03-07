@@ -21,5 +21,11 @@ describe("testing earthquake intensity", function(){
         let sResult = richter2damagelvl(fIntensity)
         expect(sResult).toBe("Catastrophe: most buildings destroyed");
     });
+    it ("tests negative Richter", function(){
+        let fIntensity = -5;
+        let sResult = richter2damagelvl(fIntensity)
+        expect(sResult).toBe("Possible error reading, no Richter Scale intensity detected.");
+    });
+
 
 })

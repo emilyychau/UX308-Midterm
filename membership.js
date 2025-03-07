@@ -12,14 +12,14 @@ function gymDiscount (fCost, iFriends){
         fTotal = fCost;
     }
     else if (iFriends === 1) {
-        fTotal = 0.95 * fCost;
+        fTotal = fCost * 0.95;
     }
     else if (iFriends === 2) {
-        fTotal = 0.90 * fCost;
+        fTotal = fCost * 0.90;
     }
     else if (iFriends >= 3) {
-        fTotal = 0.85 * fCost;
+        fTotal = fCost * 0.85;
     }
-return fTotal;
+    return fTotal;
 }
 export {gymDiscount}
